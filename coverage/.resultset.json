@@ -1,0 +1,32 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/riannemccartney/Projects/bookmark_manager_1/app.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/riannemccartney/Projects/bookmark_manager_1/spec/features/web_helpers.rb": [
+
+      ],
+      "/Users/riannemccartney/Projects/bookmark_manager_1/spec/features/testing_infrastructure_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1563197699
+  }
+}
