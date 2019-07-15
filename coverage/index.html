@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-15T14:33:12+01:00">2019-07-15T14:33:12+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-15T15:07:16+01:00">2019-07-15T15:07:16+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">70.0%</span></span>
+    (<span class="covered_percent"><span class="red">20.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.68
+         0.19
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>2</b> files in total.
-    <b>10</b> relevant lines. 
-    <span class="green"><b>7</b> lines covered</span> and
-    <span class="red"><b>3</b> lines missed </span>
+    <b>5</b> files in total.
+    <b>30</b> relevant lines. 
+    <span class="green"><b>6</b> lines covered</span> and
+    <span class="red"><b>24</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,22 +52,52 @@
       
       <tr>
         <td class="strong"><a href="#05f4e65eab0e7b58a7fd6e037be28b7dfa02ac17" class="src_link" title="app.rb">app.rb</a></td>
-        <td class="yellow strong">83.33 %</td>
-        <td>12</td>
-        <td>6</td>
-        <td>5</td>
+        <td class="red strong">30.0 %</td>
+        <td>18</td>
+        <td>10</td>
+        <td>3</td>
+        <td>7</td>
+        <td>0.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#1c771744989525afe04f2c4a352098331b90e714" class="src_link" title="lib/bookmarks.rb">lib/bookmarks.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#971bbde52e378d79afc5fdb23ac2dca8a3961c8a" class="src_link" title="spec/bookmark_spec.rb">spec/bookmark_spec.rb</a></td>
+        <td class="red strong">12.5 %</td>
+        <td>13</td>
+        <td>8</td>
         <td>1</td>
-        <td>0.8</td>
+        <td>7</td>
+        <td>0.1</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#d9c747681d2a7aec2fcf28ce950c26bf8ba24ed4" class="src_link" title="spec/features/testing_infrastructure_spec.rb">spec/features/testing_infrastructure_spec.rb</a></td>
-        <td class="red strong">50.0 %</td>
+        <td class="red strong">25.0 %</td>
         <td>6</td>
         <td>4</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0.5</td>
+        <td>1</td>
+        <td>3</td>
+        <td>0.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ba1f3a23a5dbc617db39a1d51f7896af33ab0377" class="src_link" title="spec/features/viewing_bookmarks_spec.rb">spec/features/viewing_bookmarks_spec.rb</a></td>
+        <td class="red strong">12.5 %</td>
+        <td>12</td>
+        <td>8</td>
+        <td>1</td>
+        <td>7</td>
+        <td>0.1</td>
       </tr>
       
     </tbody>
@@ -89,11 +119,11 @@
         <div class="source_table" id="05f4e65eab0e7b58a7fd6e037be28b7dfa02ac17">
   <div class="header">
     <h3>app.rb</h3>
-    <h4><span class="yellow">83.33 %</span> covered</h4>
+    <h4><span class="red">30.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
   
@@ -112,61 +142,267 @@
           <code class="ruby">require &#39;capybara&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;./lib/bookmarks.rb&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
           
-          <code class="ruby">class Bookmark &lt; Sinatra::Base</code>
+          
+          <code class="ruby">class BookmarkManager &lt; Sinatra::Base</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  get &#39;/&#39; do</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="7">
           
           
-          <code class="ruby">    erb :index</code>
+          <code class="ruby">  get &#39;/&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="missed" data-hits="0" data-linenumber="8">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    erb :index</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">  get &#39;/bookmarks&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    @bookmarks = Bookmarks.all</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    erb :bookmarks</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
           
           <code class="ruby">  run! if app_file == $0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="1c771744989525afe04f2c4a352098331b90e714">
+  <div class="header">
+    <h3>lib/bookmarks.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby">class Bookmarks</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  def self.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">    @bookmarks = [expect(bookmarks).to include(&quot;http://www.google.com&quot;),</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">                  expect(bookmarks).to include(&quot;http://www.bbc.com&quot;),</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">                  expect(bookmarks).to include(&quot;http://www.makersacademy.com&quot;)]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="971bbde52e378d79afc5fdb23ac2dca8a3961c8a">
+  <div class="header">
+    <h3>spec/bookmark_spec.rb</h3>
+    <h4><span class="red">12.5 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;bookmarks&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">describe Bookmarks do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">  describe &#39;.all&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    it &#39;returns all bookmarks&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">      bookmarks = Bookmarks.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">      expect(bookmarks).to include(&quot;http://www.google.com&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">      expect(bookmarks).to include(&quot;http://www.bbc.com&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">      expect(bookmarks).to include(&quot;http://www.makersacademy.com&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
@@ -180,11 +416,11 @@
         <div class="source_table" id="d9c747681d2a7aec2fcf28ce950c26bf8ba24ed4">
   <div class="header">
     <h3>spec/features/testing_infrastructure_spec.rb</h3>
-    <h4><span class="red">50.0 %</span> covered</h4>
+    <h4><span class="red">25.0 %</span> covered</h4>
     <div>
       <b>4</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -197,8 +433,8 @@
           <code class="ruby">feature &#39;testing infrastructure&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="2">
+          
           
           <code class="ruby">  scenario &#39;Can run app and check page content&#39; do</code>
         </li>
@@ -212,7 +448,7 @@
         <li class="missed" data-hits="0" data-linenumber="4">
           
           
-          <code class="ruby">    expect(page).to have_content &#39;Hello, world!&#39;</code>
+          <code class="ruby">    expect(page).to have_content &#39;Bookmark Manager&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -225,6 +461,97 @@
           
           
           <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ba1f3a23a5dbc617db39a1d51f7896af33ab0377">
+  <div class="header">
+    <h3>spec/features/viewing_bookmarks_spec.rb</h3>
+    <h4><span class="red">12.5 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">feature &#39;viewing bookmarks&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="2">
+          
+          
+          <code class="ruby">  scenario &#39;user can click view button&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">    visit &#39;/&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">    expect(page).to have_selector(:link_or_button, &#39;View bookmarks&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">  scenario &#39;user can view list of bookmarks&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    visit &#39;/&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    click_button &#39;View bookmarks&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    expect(page).to have_content &quot;Bookmarks&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end </code>
         </li>
       
     </ol>
