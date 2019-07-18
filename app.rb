@@ -4,7 +4,7 @@ require './lib/bookmark.rb'
 
 class BookmarkManager < Sinatra::Base
 
-  enable :sessions
+  enable :sessions, :method_override
 
   get '/' do
     erb :index
@@ -13,6 +13,12 @@ class BookmarkManager < Sinatra::Base
   get '/bookmarks' do
     @bookmarks = Bookmark.all
     erb :bookmarks
+  end
+
+  delete '/bookmarks/:id' do
+    Bookmark.delete(id: params[:id])     # need to put in id: here as its what enables the self.delete method to put in the id params in as an argument.
+    redirect '/bookmarks'
+
   end
 
 
