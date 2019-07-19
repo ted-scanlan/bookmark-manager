@@ -1,12 +1,20 @@
 require 'sinatra/base'
 require 'capybara'
-require './lib/bookmark.rb'
+require_relative './lib/bookmark.rb'
+require_relative './lib/database_connection_setup'
+require_relative './lib/validate_url_module'
+require 'sinatra/flash'
 
 class BookmarkManager < Sinatra::Base
 
+include UrlValidation
+register Sinatra::Flash
+
   enable :sessions, :method_override
 
+
   get '/' do
+
     erb :index
   end
 
@@ -26,9 +34,14 @@ class BookmarkManager < Sinatra::Base
     # url = params[:url]
     # connection = PG.connect(dbname: 'bookmark_manager_test')
     # connection.exec("INSERT INTO bookmarks (url) VALUES('#{url}')")
-
-    Bookmark.create(url: params[:url], title: params[:title])
+    if is_valid?(params[:url])
+      Bookmark.create(url: params[:url], title: params[:title])
+    else
+      flash[:notice] = "Error: invalid url"
+    end
     redirect '/'
+
+
   end
 
   get '/bookmarks/:id/edit' do
