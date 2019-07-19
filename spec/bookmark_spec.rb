@@ -56,4 +56,26 @@ describe Bookmark do
       expect(Bookmark.all.length).to eq 0
   end
 end
+
+describe '.update' do
+  it 'updates a bookmark' do
+    bookmark = Bookmark.create(url: 'http://www.google.com', title: "Google")
+    updated_bookmark = Bookmark.update(id: bookmark.id, url: "http://www.schmoogle.com", title: "Schmoogle")
+
+    expect(updated_bookmark.id).to eq bookmark.id
+    expect(updated_bookmark.title).to eq "Schmoogle"
+    expect(updated_bookmark.url).to eq "http://www.schmoogle.com"
+end
+end
+
+describe '.find' do
+  it 'finds a bookmark' do
+    bookmark = Bookmark.create(url: 'http://www.google.com', title: "Google")
+    result = Bookmark.find(id: bookmark.id)
+
+    expect(result.id).to eq bookmark.id
+    expect(result.title).to eq "Google"
+    expect(result.url).to eq "http://www.google.com"
+  end
+end
 end

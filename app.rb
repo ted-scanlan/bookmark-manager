@@ -31,6 +31,22 @@ class BookmarkManager < Sinatra::Base
     redirect '/'
   end
 
+  get '/bookmarks/:id/edit' do
+    @bookmark_id = params[:id]   #why does it save the id here when in erb its not in a name variable?
+    @bookmark = Bookmark.find(id: params[:id])
+    erb :'bookmarks/edit'
+  end
+
+  patch '/bookmarks/:id' do
+
+   Bookmark.update(id: params[:id], url: params[:url], title: params[:title])
+
+    redirect '/bookmarks'
+    #Bookmark.update
+
+  end
+
+
   run! if app_file == $0
 
 end

@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-17T17:11:03+01:00">2019-07-17T17:11:03+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-07-18T17:21:00+01:00">2019-07-18T17:21:00+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">13.79%</span></span>
+    (<span class="covered_percent"><span class="red">12.35%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.14
+         0.13
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>6</b> files in total.
-    <b>58</b> relevant lines. 
-    <span class="green"><b>8</b> lines covered</span> and
-    <span class="red"><b>50</b> lines missed </span>
+    <b>8</b> files in total.
+    <b>81</b> relevant lines. 
+    <span class="green"><b>10</b> lines covered</span> and
+    <span class="red"><b>71</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,18 +52,8 @@
       
       <tr>
         <td class="strong"><a href="#394efd23c0a50c5b107049fa6adbb2dbfea9a893" class="src_link" title="app.rb">app.rb</a></td>
-        <td class="red strong">21.43 %</td>
-        <td>30</td>
-        <td>14</td>
-        <td>3</td>
-        <td>11</td>
-        <td>0.2</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#3cd03877a73175d71abec7cae05cd90f5a260ae9" class="src_link" title="lib/bookmark.rb">lib/bookmark.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>35</td>
+        <td>51</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -72,12 +62,22 @@
       
       <tr>
         <td class="strong"><a href="#74ffc0b6231550608925c890f3557e3f7cd4c458" class="src_link" title="spec/bookmark_spec.rb">spec/bookmark_spec.rb</a></td>
-        <td class="red strong">5.88 %</td>
-        <td>34</td>
-        <td>17</td>
-        <td>1</td>
-        <td>16</td>
+        <td class="red strong">7.41 %</td>
+        <td>59</td>
+        <td>27</td>
+        <td>2</td>
+        <td>25</td>
         <td>0.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#40c154a30a1fb7d594ba45bd7bfe20c368f8ee29" class="src_link" title="spec/database_helpers.rb">spec/database_helpers.rb</a></td>
+        <td class="red strong">40.0 %</td>
+        <td>7</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>0.4</td>
       </tr>
       
       <tr>
@@ -91,6 +91,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#7fd9b978057d1e2ba7ddd2c54fd9b0b837681aef" class="src_link" title="spec/features/deleting_bookmarks_spec.rb">spec/features/deleting_bookmarks_spec.rb</a></td>
+        <td class="red strong">11.11 %</td>
+        <td>15</td>
+        <td>9</td>
+        <td>1</td>
+        <td>8</td>
+        <td>0.1</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#2c4b65a2971fbc3659e6a9d543dfdb831cde86bc" class="src_link" title="spec/features/testing_infrastructure_spec.rb">spec/features/testing_infrastructure_spec.rb</a></td>
         <td class="red strong">25.0 %</td>
         <td>6</td>
@@ -98,6 +108,16 @@
         <td>1</td>
         <td>3</td>
         <td>0.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e8a49cb5dfcc09350f25e7b8a3599e55e4cbe0c4" class="src_link" title="spec/features/updating_a_bookmark_spec.rb">spec/features/updating_a_bookmark_spec.rb</a></td>
+        <td class="red strong">7.69 %</td>
+        <td>20</td>
+        <td>13</td>
+        <td>1</td>
+        <td>12</td>
+        <td>0.1</td>
       </tr>
       
       <tr>
@@ -129,31 +149,31 @@
         <div class="source_table" id="394efd23c0a50c5b107049fa6adbb2dbfea9a893">
   <div class="header">
     <h3>app.rb</h3>
-    <h4><span class="red">21.43 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>11</b> lines missed.</span>
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="1">
+          
           
           <code class="ruby">require &#39;sinatra/base&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
+          
           
           <code class="ruby">require &#39;capybara&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="3">
+          
           
           <code class="ruby">require &#39;./lib/bookmark.rb&#39;</code>
         </li>
@@ -164,7 +184,7 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">class BookmarkManager &lt; Sinatra::Base</code>
@@ -176,10 +196,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">  enable :sessions</code>
+          <code class="ruby">  enable :sessions, :method_override</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
@@ -188,13 +208,13 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">  get &#39;/&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">    erb :index</code>
@@ -212,19 +232,19 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">  get &#39;/bookmarks&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">    @bookmarks = Bookmark.all</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">    erb :bookmarks</code>
@@ -245,224 +265,25 @@
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="19">
-          
-          
-          <code class="ruby">  post &#39;/adding&#39; do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">    # url = params[:url]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">    # connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">    # connection.exec(&quot;INSERT INTO bookmarks (url) VALUES(&#39;#{url}&#39;)&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="24">
-          
-          
-          <code class="ruby">    Bookmark.create(url: params[:url])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="25">
-          
-          
-          <code class="ruby">    redirect &#39;/&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="28">
-          
-          
-          <code class="ruby">  run! if app_file == $0</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="3cd03877a73175d71abec7cae05cd90f5a260ae9">
-  <div class="header">
-    <h3>lib/bookmark.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="never" data-hits="" data-linenumber="1">
-          
-          
-          <code class="ruby">require &#39;pg&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby">class Bookmark</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">  # attr_reader :title, :url</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">  # def initialize(title:, url:)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">  #   @title = title</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">  #   @url = url</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">  def self.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">    if ENV[&#39;ENVIRONMENT&#39;] == &#39;test&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">      connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">    connection = PG.connect(dbname: &#39;bookmark_manager&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">    result = connection.exec(&quot;SELECT * FROM bookmarks;&quot;)</code>
+          <code class="ruby">  delete &#39;/bookmarks/:id&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">    result.map do |bookmark|</code>
+          <code class="ruby">    Bookmark.delete(id: params[:id])     # need to put in id: here as its what enables the self.delete method to put in the id params in as an argument.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">      Bookmark.new(id: bookmark[&#39;id&#39;], title[&#39;title&#39;], url: bookmark[&#39;url&#39;])</code>
+          <code class="ruby">    redirect &#39;/bookmarks&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
@@ -480,49 +301,49 @@
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">  def self.create(url:, title:)     #why symbol</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">    if ENV[&#39;ENVIRONMENT&#39;] == &#39;test&#39;</code>
+          <code class="ruby">  post &#39;/adding&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">      connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
+          <code class="ruby">    # url = params[:url]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">    else</code>
+          <code class="ruby">    # connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">      connection = PG.connect(dbname: &#39;bookmark_manager&#39;)</code>
+          <code class="ruby">    # connection.exec(&quot;INSERT INTO bookmarks (url) VALUES(&#39;#{url}&#39;)&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">      connection.exec(&quot;INSERT INTO bookmarks (title, url) VALUES(&#39;#{title}&#39;,&#39;#{url}&#39;) RETURNING id, url, title&quot;)</code>
+          <code class="ruby">    Bookmark.create(url: params[:url], title: params[:title])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    redirect &#39;/&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
@@ -540,10 +361,106 @@
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  get &#39;/bookmarks/:id/edit&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">    @bookmark_id = params[:id]   #why do i need an instance variable here?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">    erb :&#39;bookmarks/edit&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  patch &#39;/bookmarks/:id&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    connection = PG.connect(dbname: &quot;bookmark_manager_test&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">    connection.exec(UPDATE bookmarks SET url = &#39;#{params[:url]}&#39;, title = &#39;#{params[:title]}&#39; WHERE id = &#39;#{params[:id]}&#39;&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    redirect &#39;/bookmarks&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">    #Bookmark.update</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">  run! if app_file == $0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">end</code>
@@ -557,51 +474,51 @@
         <div class="source_table" id="74ffc0b6231550608925c890f3557e3f7cd4c458">
   <div class="header">
     <h3>spec/bookmark_spec.rb</h3>
-    <h4><span class="red">5.88 %</span> covered</h4>
+    <h4><span class="red">7.41 %</span> covered</h4>
     <div>
-      <b>17</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>16</b> lines missed.</span>
+      <b>27</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>25</b> lines missed.</span>
     </div>
   </div>
   
   <pre>
     <ol>
       
-        <li class="never" data-hits="" data-linenumber="1">
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;database_helpers&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">describe Bookmark do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3">
+        <li class="missed" data-hits="0" data-linenumber="5">
           
           
-          <code class="ruby">  describe &#39;.all&#39; do</code>
+          <code class="ruby">  describe &#39;.create&#39; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="4">
+        <li class="missed" data-hits="0" data-linenumber="6">
           
           
-          <code class="ruby">    it &#39;returns all bookmarks&#39; do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">      # connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
+          <code class="ruby">    it &#39;creates a bookmark&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -610,106 +527,106 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="missed" data-hits="0" data-linenumber="8">
           
           
-          <code class="ruby">      ##add test data</code>
+          <code class="ruby">      bookmark = Bookmark.create(url: &#39;http://www.google.com&#39;, title: &quot;Google&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">      # connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.google.com&#39;);&quot;)</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="missed" data-hits="0" data-linenumber="10">
           
           
-          <code class="ruby">      # connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.bbc.co.uk&#39;);&quot;)</code>
+          <code class="ruby">      database_row = get_bookmark_row_from_db(id: bookmark.id)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">      # connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.makersacademy.com&#39;);&quot;)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="12">
           
           
-          <code class="ruby">      Bookmark.create(url: &#39;http://www.google.com&#39;, title: &quot;Google&quot;)</code>
+          <code class="ruby">      expect(database_row[&#39;title&#39;]).to eq &#39;Google&#39;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="13">
           
           
-          <code class="ruby">      Bookmark.create(url: &#39;http://www.bbc.co.uk&#39;, title: &quot;BBC&quot;)</code>
+          <code class="ruby">      expect(database_row[&#39;url&#39;]).to eq &#39;http://www.google.com&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
-          
-          <code class="ruby">      Bookmark.create(url: &#39;http://www.makersacademy.com&#39;, title: &quot;Makers Academy&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
+        <li class="missed" data-hits="0" data-linenumber="15">
           
           
-          <code class="ruby">      bookmarks = Bookmark.all</code>
+          <code class="ruby">      expect(bookmark).to be_a Bookmark</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">      expect(bookmark.title).to eq &#39;Google&#39;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="18">
           
           
-          <code class="ruby">      expect(bookmarks.length).to eq 3</code>
+          <code class="ruby">      expect(bookmark.url).to eq &#39;http://www.google.com&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">      expect(bookmarks.first).to be_a Bookmark</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="20">
-          
-          
-          <code class="ruby">      expect(bookmarks.first.id).to eq Bookmark.id</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="21">
-          
-          
-          <code class="ruby">      expect(bookmarks.first.title).to eq &#39;Google&#39;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
-          
-          <code class="ruby">      expect(bookmarks.first.url).to eq &#39;http://www.google.com&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">  describe &#39;.all&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">    it &#39;returns users bookmarks&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
@@ -718,40 +635,40 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">  describe &#39;.create&#39; do</code>
+          <code class="ruby">      # connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">    it &#39;creates a new bookmark&#39; do</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">      bookmark = Bookmark.create(url: &#39;http://www.testbookmark.com&#39;, title: &quot;test&quot; ).first</code>
+          <code class="ruby">      ##add test data</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">      expect(bookmark[&#39;url&#39;]).to eq &#39;http://www.testbookmark.com&#39;</code>
+          <code class="ruby">      # connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.google.com&#39;);&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">      expect(bookmark[&#39;title&#39;]).to eq &#39;test&#39;</code>
+          <code class="ruby">      # connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.bbc.co.uk&#39;);&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      # connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.makersacademy.com&#39;);&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
@@ -760,13 +677,224 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="missed" data-hits="0" data-linenumber="33">
+          
+          
+          <code class="ruby">      bookmark = Bookmark.create(url: &#39;http://www.google.com&#39;, title: &quot;Google&quot; )</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">      Bookmark.create(url: &#39;http://www.bbc.co.uk&#39;, title: &quot;BBC&quot; )</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="35">
+          
+          
+          <code class="ruby">      Bookmark.create(url: &#39;http://www.makersacademy.co.uk&#39;, title: &quot;Makers Academy&quot; )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">      bookmarks = Bookmark.all       #remember this test is specificlly testing the all class method</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">      expect(bookmarks.length).to eq 3</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">      expect(bookmarks.first).to be_a Bookmark</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="43">
+          
+          
+          <code class="ruby">      expect(bookmarks.first.id).to eq bookmark.id</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
+          
+          <code class="ruby">      expect(bookmarks.first.title).to eq &quot;Google&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">      expect(bookmarks.first.url).to eq &quot;http://www.google.com&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
+          
+          <code class="ruby">  describe &#39;.delete&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="52">
+          
+          
+          <code class="ruby">    it &#39;deletes a bookmark&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="53">
+          
+          
+          <code class="ruby">      bookmark = Bookmark.create(url: &#39;http://www.google.com&#39;, title: &quot;Google&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="54">
+          
+          
+          <code class="ruby">      Bookmark.delete(id: bookmark.id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="56">
+          
+          
+          <code class="ruby">      expect(Bookmark.all.length).to eq 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="40c154a30a1fb7d594ba45bd7bfe20c368f8ee29">
+  <div class="header">
+    <h3>spec/database_helpers.rb</h3>
+    <h4><span class="red">40.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;pg&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def get_bookmark_row_from_db(id:)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">  connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">  result = connection.query(&quot;SELECT * FROM bookmarks WHERE id = #{id};&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">  result.first</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">end</code>
@@ -818,7 +946,7 @@
         <li class="missed" data-hits="0" data-linenumber="5">
           
           
-          <code class="ruby">    fill_in &#39;title&#39;, with: &#39;http://www.youtube.com&#39;</code>
+          <code class="ruby">    fill_in &#39;title&#39;, with: &#39;Youtube&#39;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="6">
@@ -852,6 +980,115 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="7fd9b978057d1e2ba7ddd2c54fd9b0b837681aef">
+  <div class="header">
+    <h3>spec/features/deleting_bookmarks_spec.rb</h3>
+    <h4><span class="red">11.11 %</span> covered</h4>
+    <div>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">feature &#39;deleting a bookmark&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="2">
+          
+          
+          <code class="ruby">  scenario &#39;user can delete a bookmark&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">    bookmark = Bookmark.create(url: &quot;http://www.google.com&quot;, title: &quot;Google&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    visit(&#39;/&#39;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    click_button &#39;View bookmarks&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    expect(page).to have_link(&#39;Google&#39;, href: &#39;http://www.google.com&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    first(&#39;.bookmark&#39;).click_button &#39;Delete&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    expect(current_path).to eq &#39;/bookmarks&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    expect(page).not_to have_link(&#39;Google&#39;, href: &#39;http://www.google.com&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>
@@ -907,6 +1144,145 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e8a49cb5dfcc09350f25e7b8a3599e55e4cbe0c4">
+  <div class="header">
+    <h3>spec/features/updating_a_bookmark_spec.rb</h3>
+    <h4><span class="red">7.69 %</span> covered</h4>
+    <div>
+      <b>13</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>12</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">feature &#39;updating a bookmark&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="2">
+          
+          
+          <code class="ruby">  scenario &#39;it enables a user to update a bookmark&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">    bookmark = Bookmark.create(url: &quot;http://www.google.com&quot;, title: &quot;Google&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">    visit(&#39;/&#39;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    click_button &#39;View bookmarks&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    first(&#39;.bookmark&#39;).click_button &#39;Edit&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    expect(current_path).to eq &quot;/bookmarks/#{bookmark.id}/edit&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    fill_in &#39;title&#39;, with: &#39;Schmoogle&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    fill_in &#39;url&#39;, with: &#39;http://www.schmoogle.com&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    click_button(&#39;Save&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    expect(current_path).to eq &quot;/bookmarks/&quot; </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    expect(page).not_to have_link(&#39;Google&#39;, href: &#39;http://www.google.com&#39;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">    expect(page).to have_link(&#39;Schmoogle&#39;, href: &#39;http://www.schmoogle.com&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">end</code>
