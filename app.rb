@@ -4,6 +4,7 @@ require_relative './lib/bookmark.rb'
 require_relative './lib/database_connection_setup'
 require_relative './lib/validate_url_module'
 require 'sinatra/flash'
+require_relative './lib/comment'
 
 class BookmarkManager < Sinatra::Base
 
@@ -48,6 +49,18 @@ register Sinatra::Flash
     @bookmark_id = params[:id]   #why does it save the id here when in erb its not in a name variable?
     @bookmark = Bookmark.find(id: params[:id])
     erb :'bookmarks/edit'
+  end
+
+  get '/bookmarks/:id/comment' do
+    @bookmark_id = params[:id]   #why does it save the id here when in erb its not in a name variable?
+    # @bookmark = Bookmark.find(id: params[:id])
+    erb :'bookmarks/comment'
+  end
+
+  post '/bookmarks/:id/comments' do
+    Comment.create(text: params[:text], bookmark_id: params[:id])
+    redirect '/bookmarks'
+
   end
 
   patch '/bookmarks/:id' do
